@@ -1,0 +1,24 @@
+.formulario{
+    display: flex;
+    gap: -5px;
+}
+
+.input__form{
+    padding: 37px;
+    width: 500px;
+    border-top-left-radius: 37.5px;
+    border-bottom-left-radius: 37.5px;
+    border: 2px solid #000000;
+    background-image: url('/public/imagens/person_add.png');
+    background-repeat: no-repeat;
+    
+}
+
+.botao__form{
+    padding: 37px;
+    border-top-right-radius: 37.5px;
+    border-bottom-right-radius: 37.5px;
+    background-color: #C4C4C4;
+    border: 2px solid #000000;
+
+}
