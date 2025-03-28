@@ -15,3 +15,7 @@ export const erroState =atom<string>({
     key: 'erroState',
     default: ''
 })
+export const amigoSecreto =atom<string>({
+    key: 'amigoSecreto',
+    default: ''
+})

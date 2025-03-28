@@ -11,12 +11,15 @@ const Sorteio = () => {
   const [participanteDaVez, setParticipanteDaVez]=useState('')
   const [amigoSecreto, setAmigoSecreto]=useState('')
 
-    const resultado= useResultadoDoSorteio()
+  const resultado= useResultadoDoSorteio()
 
   const sortear = (evento: React.FormEvent<HTMLFormElement>) => {
     evento.preventDefault();
     if (resultado.has(participanteDaVez)){
         setAmigoSecreto(resultado.get(participanteDaVez)!)
+        setTimeout(() => {
+          setAmigoSecreto('')
+      }, 5000)
     }
   };
   return (
