@@ -1,12 +1,10 @@
 import Formulario from '../Formulario'
-import Titulo from '../Titulo'
 import styles from './Card.module.css'
 
-const Card: React.FC = () => {
+const Card: React.FC = ({children}) => {
     return (
         <div className={styles.card}>
-            <Titulo>Vamos começar!</Titulo>
-            <Formulario/>
+            {children}
         </div>
     )
 }

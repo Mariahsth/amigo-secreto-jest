@@ -20,17 +20,19 @@ const Formulario = () => {
     }
 
     return (
-        <form onSubmit={adicionarParticipante} className={styles.formulario}>
-            <input 
-                className={styles.input__form}
-                ref={inputRef}
-                value={nome}
-                onChange={evento => setNome(evento.target.value)}
-                type="text" 
-                placeholder="Insira os nomes dos participantes"
-            />
-            <button className={styles.botao__form} disabled={!nome}>Adicionar</button>
-            {mensagemDeErro && <p role="alert">{mensagemDeErro}</p>}
+        <form onSubmit={adicionarParticipante} >
+            <div className={styles.formulario_container}>
+                <input 
+                    className={styles.input__form}
+                    ref={inputRef}
+                    value={nome}
+                    onChange={evento => setNome(evento.target.value)}
+                    type="text" 
+                    placeholder="Insira os nomes dos participantes"
+                />
+                <button className={styles.botao__form} disabled={!nome}>Adicionar</button>
+            </div>
+            {mensagemDeErro && <p className={styles.alerta_erro} role="alert">{mensagemDeErro}</p>}
         </form>
     )
 

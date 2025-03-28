@@ -1,0 +1,47 @@
+.rodape_configuracoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.botao{
+    border-radius: 45px;
+    background-color: #FE652B;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px 0px 1px #000000;
+    height: 80px;
+    width: 350px;
+    background-image: url('/public/imagens/play_circle.png');
+    background-repeat: no-repeat;
+    background-position: 10%;
+    cursor: pointer;
+}
+
+.botao:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.botao:hover {
+    background-color: #4B69FD;
+}
+
+@media screen and (max-width: 800px){
+    .rodape_configuracoes{
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 220px;
+        margin: 32px 0;
+        background-image: none;
+    }
+    .rodape-configuracoes img {
+        margin-top: 32px;
+    }
+    
+
+}
